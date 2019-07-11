@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+}
+body{
+    /* min-width:960px; */
+}
+
+#container{
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: aquamarine;
+    width: 100%;
+}
+
+#logoandnav{
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+}
+#logo{
+    width: 150px;
+    height: 80px;
+    margin: 10px;
+}
+.navright{
+    position: absolute;
+    right: 10px;
+}
+.navright a:focus{
+    background-color: coral;
+    color: aliceblue;
+}
+#banner{
+    width: 100%;
+    height: 400px;
+    background-color: palevioletred;
+    position: relative;
+}
+.bannerright{   /*banner右下数字位置*/
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+.rightnumber{  /*banner右下数字格式*/
+    display: inline-block;            /*也可以改为float:left; */ 
+    border: 1px black solid;
+    background-color: aqua;
+    box-sizing: border-box;
+}
+.rightnumber:hover{     /*a:active鼠标点击时,a:visited访问后*/ /*css中并没有类似hover的click方法*/
+    transition: 0.5s;   /*动画效果需要0.5s才出现*/
+    transform: scale(1.5); /*hover之后放大自身1.5倍*/
+}
+
+#mainnav{       /*主导航区域*/
+    position: relative;     /*不加这段会导致下面 menuul position:absolute自动跳段*/
+    width: 100%;
+    height: 100px;
+    background-color: palegoldenrod;
+    border-bottom: 2px solid grey;
+}
+#menunav{           /*导航菜单栏区域*/
+    width: 960px;
+    height: 100px;
+    background-color:none;
+    margin: 0 auto;
+}
+#menuul{
+    position: absolute;
+    list-style: none;
+    bottom: 0px;
+    padding-left: 0;
+    margin-top: 0;
+}
+
+#menuul li{         
+    float: left;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 20px 20px 0px 0px;
+    border-left: 2px grey solid;
+    border-right: 2px grey solid;
+    border-top: 2px grey solid;
+}
+#menuul li a{
+    width: 100px;
+    display: inline-block;      /*设置为块状级才能定义width*/
+    text-align: center;
+}
+#menuul li.active{      /*默认第一项被选中,class="active"*/
+    background-color: cornflowerblue;
+}
+#menuul li:focus, #menuul li:hover{     /*hover或focus时背景改变*/
+    background-color: cornflowerblue;
+}
+
+#subnav{
+    width: 100%;
+    height: 100%;
+    background-color: hotpink;
+    margin-top: 20px;
+}
+#contentnav{
+    width: 960px;
+    margin: 0 auto;         /*水平居中*/
+    background-color: skyblue;
+    display: flex;      /**/
+    /* flex: 1 1 auto; */
+    flex-wrap: wrap;        /*当范围内装不下时自动往下跳行*/
+    justify-content: left;  /*left right center 定义主轴上的起点*/ /*space-between:两端对齐,项目间隔相等;space-around:每个项目两侧的间隔相等,即项目间的间隔比项目与边框的间隔大一倍*/
+}
+.contentall{
+    /* display: flex;
+    flex: 0 0 auto; */
+    flex-wrap: wrap; 
+        /* flex-flow: row wrap; */
+    padding: 80px;
+    margin: 5px;
+    flex: 100px; /*设置flex: 100px 元素都自动宽*/
+}
+#content1{
+    /* width: 20%; */
+    flex: 2 ;
+    border: 2px gray solid;
+    text-align: center;
+}
+#content2{
+    flex: 2;
+    border: 2px gray solid;
+    text-align: center;
+}
+#content3{
+    flex: 1;
+    border: 2px gray solid;
+    text-align: center;
+}
+#content4{
+    flex: 1;
+    border: 2px gray solid;
+    text-align: center;
+}
+#content5{
+    flex: 1;
+    border: 2px gray solid;
+    text-align: center;
+}
+#content6{
+    flex: 1;
+    border: 2px gray solid;
+    text-align: center;
+}
+#content7{
+    flex: 1;
+    border: 2px gray solid;
+    text-align: center;
+}
+#content8{
+    flex: 1;
+    border: 2px gray solid;
+    text-align: center;
+}
+#content9{
+    flex: 1;
+    border: 2px gray solid;
+    text-align: center;
+}
+#content10{
+    flex: 1;
+    border: 2px gray solid;
+    text-align: center;
+}
